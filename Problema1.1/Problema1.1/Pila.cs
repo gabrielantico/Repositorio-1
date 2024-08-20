@@ -9,7 +9,7 @@ namespace Problema1._1
     public class Pila : IColleccion
     {
         private int ultimo = 0;
-        private object[] array = new object[10];
+        private object[] array = {new Pila("Hola"), new Pila("Chau")};
         private string nombre;
         public static int Contador { get; set; } = 0;
 
@@ -17,7 +17,7 @@ namespace Problema1._1
         {
             ultimo++;
             Contador++;
-            Añadir(nombre);
+            this.nombre = nombre;
         }
 
         public override string ToString()
@@ -55,9 +55,9 @@ namespace Problema1._1
             throw new NotImplementedException();
         }
 
-        public void Añadir(string nombre)
+        public void Añadir(Pila pila)
         {
-            array[ultimo] = new Pila(nombre);
+            array[ultimo] = pila;
         }
 
         //override bool EstaVacia()

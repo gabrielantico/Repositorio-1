@@ -14,6 +14,6 @@ namespace Problema1._1
 
         object Primero();
 
-        void Añadir(string nombre);
+        void Añadir(Pila p);
     }
 }
