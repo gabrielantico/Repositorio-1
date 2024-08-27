@@ -1,0 +1,15 @@
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\BancoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\BancoApp.AssemblyInfoInputs.cache
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\BancoApp.AssemblyInfo.cs
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\BancoApp.csproj.CoreCompileInputs.cache
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\BancoApp.sourcelink.json
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\bin\Debug\net8.0\BancoApp.exe
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\bin\Debug\net8.0\BancoApp.deps.json
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\bin\Debug\net8.0\BancoApp.runtimeconfig.json
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\bin\Debug\net8.0\BancoApp.dll
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\bin\Debug\net8.0\BancoApp.pdb
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\BancoApp.dll
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\refint\BancoApp.dll
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\BancoApp.pdb
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\BancoApp.genruntimeconfig.cache
+C:\Users\alumno.GI\Desktop\Repositorio1\Repositorio-1\BancoApp\BancoApp\obj\Debug\net8.0\ref\BancoApp.dll
