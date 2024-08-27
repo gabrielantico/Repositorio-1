@@ -15,5 +15,7 @@ namespace PilasApp.Interfaces
         object Primero();
 
         bool Añadir(object elemento);
+
+        void mostrarElementos();
     }
 }

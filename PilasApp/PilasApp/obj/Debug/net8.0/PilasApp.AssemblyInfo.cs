@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PilasApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e02b14accd0a8f6679713eaa2cdbf399becfe988")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0405e3abe6947e8f0d87a29f7609cf3e91f04b37")]
 [assembly: System.Reflection.AssemblyProductAttribute("PilasApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PilasApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

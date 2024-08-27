@@ -19,15 +19,29 @@ namespace PilasApp.Clases
             object p;
             if (!EstaVacia())
             {
-                int i;
+                p = coleccion[0];
 
-                for (i = 0; i < siguiente && coleccion[i] == null; i++) ;
+                for (int i = 0; i < siguiente; i++)
+                {
+                    coleccion[i] = coleccion[i + 1];
+                }
 
-                p = coleccion[i];
-                coleccion[i] = null;
+                coleccion[siguiente] = null;
+
 
                 return p;
             }
+            //if (!EstaVacia())
+            //{
+            //    int i;
+
+            //    for (i = 0; i < siguiente && coleccion[i] == null; i++) ;
+
+            //    p = coleccion[i];
+            //    coleccion[i] = null;
+
+            //    return p;
+            //}
             else
             {
                 return "Está vacía";

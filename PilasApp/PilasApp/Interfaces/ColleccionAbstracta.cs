@@ -36,6 +36,14 @@ namespace PilasApp.Interfaces
 
         public abstract object Extraer();
 
+        public void mostrarElementos()
+        {
+            for(int i = 0; i < siguiente; i++)
+            {
+                Console.WriteLine(coleccion[i]);
+            }
+        }
+
         public virtual object Primero()
         {
             if (!EstaVacia())
