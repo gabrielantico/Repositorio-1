@@ -1,5 +1,6 @@
 ﻿using BancoApp.Bussines;
 using BancoApp.Domain;
+using Microsoft.Identity.Client;
 using System.Reflection.Emit;
 
 namespace BancoApp
@@ -10,58 +11,200 @@ namespace BancoApp
         {
             Service oService = new Service();
 
-            Client c = new Client("Gabriel", "Antico", 46032095);
 
-            Account a = new Account();
 
-            a.Client = c;
+            Console.WriteLine("Seleccione la acción a realizar\n1.Ingresar una cuenta\n2.Salir");
+            int respuesta = Convert.ToInt32(Console.ReadLine());
 
-            string cbu = string.Empty;
-            float balance = 0;
-            string typeAccount = string.Empty;
-            float lastMove = 0;
-
-            try
+            while (respuesta != 1 && respuesta != 2)
             {
-                Console.WriteLine("Ingrese el cbu de la cuenta a crear");
-                cbu = Console.ReadLine();
-
-                Console.WriteLine("Ingrese el saldo de la cuenta");
-                balance = float.Parse(Console.ReadLine());
-
-                Console.WriteLine("Ingrese el tipo de cuenta que posee el usuario");
-                typeAccount = Console.ReadLine();
-
-                Console.WriteLine("Ingrese el ultimo movimiento de la cuenta");
-                lastMove = float.Parse(Console.ReadLine());
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Escribió un tipo de dato incorrecto");
+                Console.WriteLine("Ingresó un valor inválido, ingreselo otra vez, por favor");
+                respuesta = Convert.ToInt32(Console.ReadLine());
             }
 
-            a.Cbu = cbu;
-            a.Balance = balance;
-            a.TypeAccount = typeAccount;
-            a.LastMove = lastMove;
+            while (respuesta == 1)
+            {
+                Client c = new Client();
+
+                Console.WriteLine("Ingrese el dni del cliente");
+                int dni = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Ingrese el nombre del cliente");
+                string name = Console.ReadLine();
+
+                Console.WriteLine("Ingrese el apellido del cliente");
+                string surname = Console.ReadLine();
+
+                c.Dni = dni;
+                c.Name = name;
+                c.Surname = surname;
+
+                Account acc = new Account();
+
+                acc.Client = c;
+
+                Console.WriteLine("Ingrese el cbu que tendrá la cuenta");
+                string cbu = Convert.ToString(Console.ReadLine());
+
+                Console.WriteLine("Ingrese el saldo que tendrá la cuenta");
+                float balance = float.Parse(Console.ReadLine());
+
+                Console.WriteLine("Ingrese el tipo de cuenta");
+                string typeAccount = Convert.ToString(Console.ReadLine());
+
+                Console.WriteLine("Ingrese el último movimiento de la cuenta");
+                float lastMove = float.Parse(Console.ReadLine());
+
+                acc.Cbu = cbu;
+                acc.Balance = balance;
+                acc.TypeAccount = typeAccount;
+                acc.LastMove = lastMove;
+
+                int affectedRows = oService.Register(acc);
+
+                if (affectedRows > 0)
+                {
+                    Console.WriteLine("Se ha agregado una cuenta");
+                }
+                else
+                {
+                    Console.WriteLine("Error al agregar la cuenta");
+                }
+
+                Console.WriteLine("Seleccione la acción a realizar\n1.Ingresar una cuenta\n2.Salir");
+                respuesta = Convert.ToInt32(Console.ReadLine());
+
+                while (respuesta != 1 && respuesta != 2)
+                {
+                    Console.WriteLine("Ingreso un valor inválido, ingreselo otra vez, por favor");
+                    respuesta = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            //Crear primera cuenta
+
+            //Console.WriteLine("¿Desea crear una cuenta?\n1.Sí\n2.No");
+            //int respuesta;
+            //respuesta = Convert.ToInt32(Console.ReadLine());
+            //while (respuesta != 1 && respuesta != 2)
+            //{
+            //    Console.WriteLine("Ingreso un valor inválido, ingreselo otra vez, por favor");
+            //    respuesta = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //if(respuesta == 1)
+            //{
+            //    Client c = new Client();
+
+            //    Console.WriteLine("Ingrese el dni del cliente");
+            //    int dni = Convert.ToInt32(Console.ReadLine());
+
+            //    Console.WriteLine("Ingrese el nombre del cliente");
+            //    string name = Console.ReadLine();
+
+            //    Console.WriteLine("Ingrese el apellido del cliente");
+            //    string surname = Console.ReadLine();
+
+            //    c.Dni = dni;
+            //    c.Name = name;
+            //    c.Surname = surname;
+
+            //    Account acc = new Account();
+
+            //    acc.Client = c;
+
+            //    Console.WriteLine("Ingrese el cbu que tendrá la cuenta");
+            //    string cbu = Convert.ToString(Console.ReadLine());
+
+            //    Console.WriteLine("Ingrese el saldo que tendrá la cuenta");
+            //    float balance = float.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("Ingrese el tipo de cuenta");
+            //    string typeAccount = Convert.ToString(Console.ReadLine());
+
+            //    Console.WriteLine("Ingrese el último movimiento de la cuenta");
+            //    float lastMove = float.Parse(Console.ReadLine());
+
+            //    acc.Cbu = cbu;
+            //    acc.Balance = balance;
+            //    acc.TypeAccount = typeAccount;
+            //    acc.LastMove = lastMove;
+
+            //    int affectedRows = oService.Register(acc);
+
+            //    if (affectedRows > 0)
+            //    {
+            //        Console.WriteLine("Se ha agregado una cuenta");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Error al agregar la cuenta");
+            //    }
+            //}
+
+            ////Crear segunda cuenta
+
+            //Console.WriteLine("¿Desea crear otra cuenta?\n1.Sí\n2.No");
             
-            a.Balance = Convert.ToInt32(Console.ReadLine());
-            a.TypeAccount = Console.ReadLine();
-            a.LastMove = Convert.ToInt32(Console.ReadLine());
+            //respuesta = Convert.ToInt32(Console.ReadLine());
+            //while (respuesta != 1 && respuesta != 2)
+            //{
+            //    Console.WriteLine("Ingreso un valor inválido, ingreselo otra vez, por favor");
+            //    respuesta = Convert.ToInt32(Console.ReadLine());
+            //}
 
-            int affectedRows = oService.Register(a);
+            //if (respuesta == 1)
+            //{
+            //    Client c = new Client();
 
-            if (affectedRows > 0)
-            {
-                Console.WriteLine("Se ha agregado una cuenta");
-            }
-            else
-            {
-                Console.WriteLine("Error al agregar la cuenta");
-            }
+            //    Console.WriteLine("Ingrese el dni del cliente");
+            //    int dni = Convert.ToInt32(Console.ReadLine());
 
+            //    Console.WriteLine("Ingrese el nombre del cliente");
+            //    string name = Console.ReadLine();
 
+            //    Console.WriteLine("Ingrese el apellido del cliente");
+            //    string surname = Console.ReadLine();
 
+            //    c.Dni = dni;
+            //    c.Name = name;
+            //    c.Surname = surname;
+
+            //    Account acc = new Account();
+
+            //    acc.Client = c;
+
+                
+
+            //    Console.WriteLine("Ingrese el cbu que tendrá la cuenta");
+            //    string cbu = Convert.ToString(Console.ReadLine());
+
+            //    Console.WriteLine("Ingrese el saldo que tendrá la cuenta");
+            //    float balance = float.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("Ingrese el tipo de cuenta");
+            //    string typeAccount = Convert.ToString(Console.ReadLine());
+
+            //    Console.WriteLine("Ingrese el último movimiento de la cuenta");
+            //    float lastMove = float.Parse(Console.ReadLine());
+
+            //    acc.Cbu = cbu;
+            //    acc.Balance = balance;
+            //    acc.TypeAccount = typeAccount;
+            //    acc.LastMove = lastMove;
+
+            //    int affectedRows = oService.Register(acc);
+
+            //    if (affectedRows > 0)
+            //    {
+            //        Console.WriteLine("Se ha agregado una cuenta");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Error al agregar la cuenta");
+            //    }
+            //}
+            
 
         }
     }

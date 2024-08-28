@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alumno.GI\\Desktop\\Repositorio1\\Repositorio-1\\BancoApp\\BancoApp\\BancoApp.csproj": {}
+    "D:\\Gabi\\Usuarios\\Facultad\\2do Cuatrimestre\\Programación II\\Proyectos\\Repositorio 1\\Repositorio-1\\BancoApp\\BancoApp\\BancoApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alumno.GI\\Desktop\\Repositorio1\\Repositorio-1\\BancoApp\\BancoApp\\BancoApp.csproj": {
+    "D:\\Gabi\\Usuarios\\Facultad\\2do Cuatrimestre\\Programación II\\Proyectos\\Repositorio 1\\Repositorio-1\\BancoApp\\BancoApp\\BancoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alumno.GI\\Desktop\\Repositorio1\\Repositorio-1\\BancoApp\\BancoApp\\BancoApp.csproj",
+        "projectUniqueName": "D:\\Gabi\\Usuarios\\Facultad\\2do Cuatrimestre\\Programación II\\Proyectos\\Repositorio 1\\Repositorio-1\\BancoApp\\BancoApp\\BancoApp.csproj",
         "projectName": "BancoApp",
-        "projectPath": "C:\\Users\\alumno.GI\\Desktop\\Repositorio1\\Repositorio-1\\BancoApp\\BancoApp\\BancoApp.csproj",
-        "packagesPath": "C:\\Users\\alumno.GI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alumno.GI\\Desktop\\Repositorio1\\Repositorio-1\\BancoApp\\BancoApp\\obj\\",
+        "projectPath": "D:\\Gabi\\Usuarios\\Facultad\\2do Cuatrimestre\\Programación II\\Proyectos\\Repositorio 1\\Repositorio-1\\BancoApp\\BancoApp\\BancoApp.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\Gabi\\Usuarios\\Facultad\\2do Cuatrimestre\\Programación II\\Proyectos\\Repositorio 1\\Repositorio-1\\BancoApp\\BancoApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alumno.GI\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

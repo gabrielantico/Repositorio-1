@@ -23,5 +23,9 @@ namespace BancoApp.Domain
             this.surname = surname;
             this.dni = dni;
         }
+        public Client()
+        {
+
+        }
     }
 }
