@@ -1,0 +1,41 @@
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+ul li {
+    padding-right: 20px;
+}
+
+.header{
+    display: flex;
+
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+html, body{
+    height: 100%;
+    margin: 0px;
+}
+
+main{
+    flex: 1;
+}
